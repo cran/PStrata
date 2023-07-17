@@ -1,4 +1,4 @@
-ec358cb68a2f91e55d7ff7a9d86ed40a *DESCRIPTION
+9eced4d1f6cbf82a806395c20ac5e7bf *DESCRIPTION
 3b6dc24d4d8a09033fe3a71901a7a656 *NAMESPACE
 a360eb2bf5000256ec1c21b0f8f2b8f1 *R/PSContrast.R
 9c8d50bfe4892cb78a53c80b01d9fd90 *R/PSFormula.R
@@ -25,7 +25,7 @@ fd9550c26a12682d1b02d7f674066228 *inst/function_table.txt
 030a0e997424619af0b45afc731cc3c1 *man/PSFormula.Rd
 d93232c1fb2d122b12f80ed83ab66c22 *man/PSObject.Rd
 a1d4ece131323fed3bf2f509b4457cfd *man/PSOutcome.Rd
-70c9f709d6567adb756243b99078560a *man/PSSample.Rd
+f8457eea44ae53683397af2f324cc52a *man/PSSample.Rd
 59f891233db34af79ed4a8441855fa39 *man/PStrata-package.Rd
 a71f134261facac93acc202c2bd189dd *man/PStrata.Rd
 84a5000e94a359bf6478c82c7137f027 *man/PStrataInfo.Rd

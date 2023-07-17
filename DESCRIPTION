@@ -1,9 +1,8 @@
 Package: PStrata
 Type: Package
-Title: Principal Stratification Analysis with Post-Randomization
-        Intervention
-Version: 0.0.1
-Date: 2023-05-04
+Title: Principal Stratification Analysis in R
+Version: 0.0.2
+Date: 2023-07-14
 Authors@R: 
   c(
     person(given = "Bo", family = "Liu", role = c("aut", "cre"), email = "bl226@duke.edu"),
@@ -20,9 +19,9 @@ Imports: patchwork, ggplot2, rstan, lme4, abind, dplyr, purrr, stringr,
 LazyData: true
 RoxygenNote: 7.1.2
 NeedsCompilation: yes
-Packaged: 2023-05-06 04:12:16 UTC; bo
+Packaged: 2023-07-14 06:32:36 UTC; bo
 Author: Bo Liu [aut, cre],
   Fan Li [ctb]
 Depends: R (>= 3.5.0)
 Repository: CRAN
-Date/Publication: 2023-05-08 10:00:12 UTC
+Date/Publication: 2023-07-17 09:30:02 UTC
