@@ -1,4 +1,4 @@
-9eced4d1f6cbf82a806395c20ac5e7bf *DESCRIPTION
+8fe52a6288d644677403473e5531eaf6 *DESCRIPTION
 3b6dc24d4d8a09033fe3a71901a7a656 *NAMESPACE
 a360eb2bf5000256ec1c21b0f8f2b8f1 *R/PSContrast.R
 9c8d50bfe4892cb78a53c80b01d9fd90 *R/PSFormula.R
@@ -8,13 +8,13 @@ fb998caf110fe87757520ed68b06a426 *R/PSOutcome.R
 0a6b45692cbd8f77cb59f8d4d15ed208 *R/PStrata-package.R
 78a020f6f15cfe16885f622151ac135a *R/PStrata.R
 bec261f1f0724cef756d4c99a8fd469e *R/PStrataInfo.R
-af3007ee37c0e0c6f88c7bb3e490a412 *R/make_stancode.R
+5ca8dd8a332cbe42fa2160c11e18ba34 *R/make_stancode.R
 3ac2b850245efc0801d78c9121351493 *R/make_standata.R
 e9f99093cd5a43660142c31517c96a75 *R/prior.R
 b13895151ba5ca246521e88fa8a08d5c *R/sim_data_Cox.R
 ceda2f0ee7a7b410a305a5236bcaac59 *R/sim_data_normal.R
 a09b710da77f10f6ed20436e334ae89a *R/survival.R
-47f95c791d83385b11d765dcbc7e2ade *README.md
+9dc81410425a5c5ef9618c26ee08fca6 *README.md
 5ff6da5e99c496297ff52a370dffdc22 *data/sim_data_Cox.rda
 23b47512a7b486823dfe541a11deba36 *data/sim_data_normal.rda
 8012264ac74ee9d225a09aec2d5564bb *inst/family_info.txt

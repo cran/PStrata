@@ -340,8 +340,10 @@ make_stancode <- function(PSobject, filename = NULL, debug = FALSE) {
     } else if (type == "coefficient") {
       model_output_lines <- c(
         model_output_lines,
-        paste0("    to_vector(beta_S[:, 2:PS]) ~ ", func, "(", params_str, ");"),
-        paste0("    to_vector(beta_G[:, 2:PG]) ~ ", func, "(", params_str, ");")
+        "    if (PS >= 2)",
+        paste0("        to_vector(beta_S[:, 2:PS]) ~ ", func, "(", params_str, ");"),
+        "    if (PG >= 2)",
+        paste0("        to_vector(beta_G[:, 2:PG]) ~ ", func, "(", params_str, ");")
       )
     } else {
       found <- F
