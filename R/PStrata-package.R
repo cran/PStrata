@@ -12,7 +12,6 @@
 #' 
 #' @name PStrata-package
 #' @docType package
-#' @alias PStrata-package
 #' @details 
 #' The Bayesian principal stratification analysis relies on two models, the principal stratum model and the outcome model.
 #' The main function of \pkg{PStrata} is \code{\link{PStrata}}, which uses formula syntax to specify these models.

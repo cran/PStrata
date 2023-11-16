@@ -5,6 +5,7 @@
 #' are easy to obtain from this object.
 #' 
 #' @param PStrataObj an object of class \code{PStrata} or \code{PStrata_survival}
+#' @param type whether the causal estimand is survival probability or RACE, ignored for non-survival outcomes.
 #' @return An S3 object of type \code{PSOutcome}, containing
 #' \item{outcome_array}{A num_strata * num_treatment * num_iter array of mean outcome if the outcome type is non-survival
 #' or a num_strata * num_treatment * num_time_points * num_iter array of mean outcome if the outcome type is survival.}
@@ -12,7 +13,7 @@
 #' \item{time_points}{The time points at which the outcome is evaluated, if the outcome type is survival.}
 #' The S3 method \code{summary} and \code{plot} can be applied to the returned object.
 #' @export
-PSOutcome <- function(PStrataObj) {
+PSOutcome <- function(PStrataObj, type = c("probability", "RACE")) {
   if (inherits(PStrataObj, "PStrata")){
     mean_effect <- rstan::extract(PStrataObj$post_samples)$'mean_effect'
     S_count <- PStrataObj$PSobject$strata_info$num_strata
@@ -40,19 +41,25 @@ PSOutcome <- function(PStrataObj) {
     ))
   }
   else {
-    mean_surv_prob <- rstan::extract(PStrataObj$post_samples)$'mean_surv_prob'
+    outcome_type <- match.arg(type, c("probability", "RACE"))
+    if (outcome_type == "probability"){
+      mean_outcome <- rstan::extract(PStrataObj$post_samples)$'mean_surv_prob'
+    }
+    else if (outcome_type == "RACE") {
+      mean_outcome <- rstan::extract(PStrataObj$post_samples)$'mean_RACE'
+    }
     S_count <- PStrataObj$PSobject$strata_info$num_strata
     Z_count <- PStrataObj$PSobject$strata_info$num_treatment
     time_points <- make_standata(PStrataObj$PSobject)$time
     T_count <- length(time_points)
-    iter_count <- dim(mean_surv_prob)[1]
+    iter_count <- dim(mean_outcome)[1]
     SZDG_table <- PStrataObj$PSobject$SZDG_table
     
     outcome_array <- array(NA, dim = c(S_count, Z_count, T_count, iter_count))
     for (S in 1:S_count) {
       for (Z in 1:Z_count) {
         G <- SZDG_table[SZDG_table[, 'S'] == S - 1 & SZDG_table[, 'Z'] == Z - 1, 'G']
-        outcome_array[S, Z, , ] <- t(mean_surv_prob[, G, ])
+        outcome_array[S, Z, , ] <- t(mean_outcome[, G, ])
       }
     }
     
