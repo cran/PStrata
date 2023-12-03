@@ -1,4 +1,4 @@
-a34b94aafa631a5c4d318a03f3e14831 *DESCRIPTION
+ca2eb09fe0d90cdf683df554d9a616bf *DESCRIPTION
 3b6dc24d4d8a09033fe3a71901a7a656 *NAMESPACE
 a360eb2bf5000256ec1c21b0f8f2b8f1 *R/PSContrast.R
 9c8d50bfe4892cb78a53c80b01d9fd90 *R/PSFormula.R
@@ -15,8 +15,11 @@ b13895151ba5ca246521e88fa8a08d5c *R/sim_data_Cox.R
 ceda2f0ee7a7b410a305a5236bcaac59 *R/sim_data_normal.R
 a09b710da77f10f6ed20436e334ae89a *R/survival.R
 9dc81410425a5c5ef9618c26ee08fca6 *README.md
+8da84baa3a19f5d1fb6c92ee34e3aeea *build/vignette.rds
 5ff6da5e99c496297ff52a370dffdc22 *data/sim_data_Cox.rda
 23b47512a7b486823dfe541a11deba36 *data/sim_data_normal.rda
+831c377d6bbf23a7c03c3a45068a8fc5 *inst/doc/PStrata_JSS.pdf
+3830efdda277d9cc542f42b77f30607e *inst/doc/PStrata_JSS.pdf.asis
 8012264ac74ee9d225a09aec2d5564bb *inst/family_info.txt
 211a05bdac62c47423558e7267efc9aa *inst/function_implement.txt
 fd9550c26a12682d1b02d7f674066228 *inst/function_table.txt
@@ -35,3 +38,4 @@ d3fdd3908267658713efd1e1b3ba3daf *man/prior.Rd
 7de7ad537a826659ad799dc36cab421d *man/sim_data_Cox.Rd
 ddb4b2312ff2d962df60d0f8232266a2 *man/sim_data_normal.Rd
 f72b96db45153df84bc6c50c58c6a046 *man/survival.Rd
+3830efdda277d9cc542f42b77f30607e *vignettes/PStrata_JSS.pdf.asis

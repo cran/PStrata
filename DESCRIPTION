@@ -1,8 +1,8 @@
 Package: PStrata
 Type: Package
 Title: Principal Stratification Analysis in R
-Version: 0.0.4
-Date: 2023-11-15
+Version: 0.0.5
+Date: 2023-12-02
 Encoding: UTF-8
 Authors@R: 
   c(
@@ -16,12 +16,14 @@ Collate: PStrata-package.R PSFormula.R PStrataInfo.R survival.R prior.R
         make_standata.R PSObject.R make_stancode.R PSSample.R PStrata.R
         PSOutcome.R sim_data_normal.R sim_data_Cox.R PSContrast.R
 License: GPL (>= 2)
+Suggests: R.rsp
+VignetteBuilder: R.rsp
 Imports: ggplot2, rstan, lme4, abind, dplyr, purrr, stringr, stats
 LazyData: true
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-11-15 19:11:51 UTC; bo
+Packaged: 2023-12-03 01:04:59 UTC; bo
 Author: Bo Liu [aut, cre],
   Fan Li [ctb]
 Repository: CRAN
-Date/Publication: 2023-11-16 21:13:58 UTC
+Date/Publication: 2023-12-03 03:10:02 UTC
